@@ -15,14 +15,14 @@ public:
         // Each cell in first column can only form a 1x1 square if matrix[i][0] = 1
         for (int i = 0; i < n; i++) {
             dp[i][0] = matrix[i][0];
-            ans += dp[i][0];
+            ans += dp[i][0];  // Add the count of squares from the first column
         }
         
         // Initialize first row of DP table
         // Each cell in first row can only form a 1x1 square if matrix[0][j] = 1
         for (int j = 1; j < m; j++) {
             dp[0][j] = matrix[0][j];
-            ans += dp[0][j];
+            ans += dp[0][j];  // Add the count of squares from the first row
         }
         
         // Fill the DP table for remaining cells
