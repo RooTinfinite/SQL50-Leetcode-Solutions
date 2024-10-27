@@ -1,6 +1,14 @@
-SELECT d.name department, e1.name employee, e1.salary
-FROM employee e1
-LEFT JOIN employee e2 ON e1.departmentId = e2.departmentId and e1.salary < e2.salary
-JOIN department d ON d.id = e1.departmentId
-GROUP BY e1.id
-HAVING count(distinct e2.salary) < 3 
+SELECT
+    D.name      AS Department
+    ,E.name     AS Employee
+    ,E.salary   AS Salary
+FROM Employee E
+JOIN Department D ON e.departmentId = d.id
+
+WHERE 3 > ( SELECT COUNT( DISTINCT (EarningMoreThanMe.Salary))
+            FROM Employee EarningMoreThanMe
+            WHERE EarningMoreThanMe.DepartmentId = e.DepartmentId
+                AND EarningMoreThanMe.Salary > e.Salary
+)
+
+        
