@@ -12,4 +12,3 @@ WHERE (product_id, year) IN (
     GROUP BY product_id
 )
 GROUP BY product_id, year, price
-
