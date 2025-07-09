@@ -1,6 +1,9 @@
-# Top SQL 50 Solutions
+# Top SQL50 Leetcode Solutions 
 
 Solutions to LeetCode Top SQL 50 study plan. Each problem links to the question and solution.
+
+READY:
+MySQL 50/50
 
 | Problem | MySQL | MS Server | Oracle | PostgreSQL | Pandas | Leetcode link |
 | --- | --- | --- | --- | --- | --- | --- |
