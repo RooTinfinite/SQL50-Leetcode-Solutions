@@ -1,4 +1,3 @@
-<<<<<<< 75qne0-codex/add-structured-task-list-to-readme
 # Top SQL50 Leetcode Solutions 
 
 Solutions to LeetCode Top SQL 50 study plan. Each problem links to the question and solution.
