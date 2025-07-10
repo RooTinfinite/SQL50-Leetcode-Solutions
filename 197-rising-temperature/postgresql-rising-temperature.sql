@@ -21,3 +21,8 @@ JOIN Weather today
     ON today.recorddate = yesterday.recorddate + INTERVAL '1 day'
 WHERE today.temperature > yesterday.temperature;
 
+--JOIN ON jest bardziej wydajne, ponieważ:
+
+    --Łączy tylko te wiersze, które mają sens w kontekście zapytania.
+
+    --Unika tworzenia zbędnych par wierszy, jak ma to miejsce w CROSS JOIN, co poprawia wydajność zapytania, szczególnie przy dużych zbiorach danych.
