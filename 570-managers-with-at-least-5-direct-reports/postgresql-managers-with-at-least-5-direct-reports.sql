@@ -1,4 +1,3 @@
--- TODO: PostgreSQL solution
 SELECT manager.name
 FROM Employee e
 JOIN Employee manager
