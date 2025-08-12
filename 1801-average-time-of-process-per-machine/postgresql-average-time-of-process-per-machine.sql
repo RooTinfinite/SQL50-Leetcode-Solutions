@@ -1,4 +1,3 @@
--- TODO: PostgreSQL solution
 SELECT s.machine_id, ROUND(AVG(e.timestamp - s.timestamp)::numeric, 3) AS processing_time
 FROM Activity s
 JOIN Activity e
