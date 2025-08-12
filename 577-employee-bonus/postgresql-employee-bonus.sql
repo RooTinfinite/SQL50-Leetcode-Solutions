@@ -1,4 +1,3 @@
--- TODO: PostgreSQL solution
 SELECT e.name, b.bonus
 FROM Employee e
 LEFT JOIN Bonus b
