@@ -1,5 +1,3 @@
--- TODO: PostgreSQL solution
-
 SELECT contest_id,
     ROUND( 100.0 *
         COUNT( DISTINCT user_id )
