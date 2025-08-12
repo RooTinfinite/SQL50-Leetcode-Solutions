@@ -1,6 +1,5 @@
--- TODO: PostgreSQL solution
-
 --Version with CROSS JOIN:
+
 SELECT today.id
 FROM Weather AS yesterday
 CROSS JOIN Weather AS today
@@ -8,6 +7,7 @@ WHERE today.recordDate - yesterday.recordDate = 1
     AND today.temperature > yesterday.temperature;
 
 --Version with JOIN ... ON:
+
 SELECT today.id
 FROM Weather today
 JOIN Weather yesterday
@@ -15,6 +15,7 @@ JOIN Weather yesterday
 WHERE today.temperature > yesterday.temperature;
 
 --Alternative version with JOIN ... USING with INTERVAL::
+
 SELECT today.id 
 FROM Weather yesterday
 JOIN Weather today
