@@ -1,5 +1,3 @@
--- TODO: PostgreSQL solution
-
 ---Version with DISTINCT
 
 SELECT DISTINCT author_id AS id
