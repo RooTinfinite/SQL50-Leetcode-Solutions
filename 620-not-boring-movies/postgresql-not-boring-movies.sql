@@ -1,5 +1,3 @@
--- TODO: PostgreSQL solution
-
 SELECT id, 
     movie,
     description, 
