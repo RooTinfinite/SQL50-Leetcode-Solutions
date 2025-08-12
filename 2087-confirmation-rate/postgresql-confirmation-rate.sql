@@ -1,5 +1,3 @@
--- TODO: PostgreSQL solution
-
 SELECT s.user_id,
     ROUND(
         COALESCE(
