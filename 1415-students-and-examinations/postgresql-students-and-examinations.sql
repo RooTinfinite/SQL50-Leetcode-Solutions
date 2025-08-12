@@ -1,4 +1,3 @@
--- TODO: PostgreSQL solution
 SELECT
     s.student_id,
     s.student_name,
