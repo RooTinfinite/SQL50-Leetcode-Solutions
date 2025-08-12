@@ -1,4 +1,3 @@
--- TODO: PostgreSQL solution
 SELECT 
     p.product_id,
     ROUND(
