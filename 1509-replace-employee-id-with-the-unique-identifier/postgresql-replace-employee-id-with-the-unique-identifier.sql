@@ -1,5 +1,3 @@
--- TODO: PostgreSQL solution
-
 ---Version with LEFT JOIN ... ON
 SELECT EU.unique_id, E.name
 FROM Employees AS E
