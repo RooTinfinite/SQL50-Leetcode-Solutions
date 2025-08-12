@@ -1,5 +1,3 @@
--- TODO: PostgreSQL solution
-
 SELECT p.project_id, 
     ROUND( 
         AVG(e.experience_years) :: numeric, 2) AS average_years
